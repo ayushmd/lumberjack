@@ -472,7 +472,7 @@ func TestOldLogFiles(t *testing.T) {
 	isNil(err, t)
 
 	l := &Logger{Filename: filename}
-	files, err := l.oldLogFiles()
+	files, err := l.OldLogFiles()
 	isNil(err, t)
 	equals(2, len(files), t)
 
